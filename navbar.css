@@ -1,0 +1,139 @@
+@font-face{
+    font-family: 'godob';
+    src: url('fonts/GodoB.ttf');
+}
+@font-face{
+    font-family: 'godom';
+    src: url('fonts/GodoM.ttf');
+}
+
+.bgbox { /* 메뉴 바의 배경 색 */
+    background-color: #333;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 1;
+}
+
+/* 메뉴 바의 내용을 담는 div */
+.header {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    font-family: 'godom';
+}
+.menu {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 50px;
+}
+
+/* The progress container */
+.progress-container {
+    width: 100%;
+    height: 6px;
+    background: rgba(0, 0, 0, 0);
+}
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 6px;
+    background: #ff0000;
+    width: 0%;
+}
+  
+/* 메뉴 바 오른쪽의 여백 조정용 */
+#mar {
+    float:right;
+    text-decoration: none;
+    padding-left: 50px;
+    color: #333;
+    -webkit-user-select: none;
+}
+
+/* 로고 이미지, 하이퍼링크 구현 관련 설정 */
+.menu object {
+    pointer-events: none;
+}
+.menu a{
+    position: relative;
+    display: inline-block;
+}
+.menu a:after{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:0;
+}
+
+/*로고*/
+#logo {
+    float: left;
+    height: 40px;
+    padding: 3px 10px;
+}
+  
+/* 드랍다운 메뉴 */
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+/* 드랍다운 버튼 속성 */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 30px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    width: 200px;
+    transition: all .5s ease;
+}
+  
+/* 마우스를 올렸을 때 메뉴 안 목록의 배경색 지정 */
+.dropdown:hover .dropbtn {
+    background-color: #555;
+}
+  
+/* 세부 메뉴 (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+  
+/* 세부 메뉴들 스타일 지정 */
+.dropdown-content a {
+    float: none;
+    color: #444;
+    padding: 15px 30px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all .3s ease;
+}
+  
+/* 세부 메뉴에서 마우스를 올렸을 때 배경색 */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+/* 메뉴에 마우스를 올렸을 때 세부 메뉴가 보이도록 설정 */
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}

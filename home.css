@@ -1,0 +1,43 @@
+@font-face{
+    font-family: 'godob';
+    src: url('fonts/GodoB.ttf');
+}
+@font-face{
+    font-family: 'godom';
+    src: url('fonts/GodoM.ttf');
+}
+body {
+    font-family: 'godom';
+    background-color: #555;
+    color: #fff;
+    line-height: 150%;
+}
+
+/*parallax scrolling */
+.parallax {
+    
+    /* 스크롤 효과 */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#p_1-1-1 {
+    background-image: url("images/p_1-1-1.jpg");  /* 사용하는 이미지 */
+    height: 300px;  /* 이미지 높이 설정 */
+}
+
+.main {
+    padding: 50px 100px;
+}
+
+#video {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.snss {
+    float:left;
+    width:225px;
+    height:225px;
+}
