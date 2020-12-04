@@ -8,7 +8,7 @@
         <script src="home.js"></script>
         <script src="https://kit.fontawesome.com/988c5f01f2.js" crossorigin="anonymous"></script>
   	</head>
-  	<body>
+  	<body onmousemove="getPos(event)" onmouseout="stopTracking()">
         <div class="header">
             <div class="menu" id="menu">
                 <div class="progress-container">                      <!--progress bar-->
@@ -18,21 +18,17 @@
                 <a href="./home.html"><object id="logo" type="image/svg+xml" data="images/textlogo2.svg"></object></a> <!--logo-->
              
                 <a id="mar">.</a>  <!--메뉴 바 오른쪽의 여백 조정용-->
-                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()">
+                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()" onclick="location.href='gallery.html'">
                     <button class="dropbtn">작품 갤러리 <i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content">
                         <a href="javascript:junbee()">작품 게시판</a>
                         <a href="javascript:junbee()">스크린샷 게시판</a>
                     </div>
                 </div>
-                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()">
-                    <button class="dropbtn">클랜 소개 <i class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a href="javascript:junbee()">좀비고 클랜 시스템</a>
-                        <a href="javascript:junbee()">닢 클랜 소개</a>
-                    </div>
+                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()" onclick="location.href='quiz.html#0'">
+                    <button class="dropbtn">좀비고 퀴즈! </button>
                 </div>
-                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()">
+                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()" onclick="location.href='gamemode.html'">
                     <button class="dropbtn">게임 방법 <i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content">
                         <a href="javascript:junbee()">스토리 모드</a>
@@ -44,9 +40,10 @@
                         <a href="javascript:junbee()">폭탄 모드</a>
                         <a href="javascript:junbee()">점령전</a>
                         <a href="javascript:junbee()">광장 미니캠프</a>
+                        <a href="javascript:junbee()">서커스 모드</a>
                     </div>
                 </div>
-                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()">
+                <div class="dropdown" onmousemove="dalkong()" onmouseout="secom()" onclick="location.href='whatiszh.html'">
                     <button class="dropbtn">좀비고등학교란? <i class="fa fa-caret-down"></i></button>
                     <div class="dropdown-content">
                         <a href="./whatiszh.html#1">게임 소개</a>
@@ -60,7 +57,8 @@
         <div class="bgbox"></div>
 
         <div id="video" class="main">
-            <iframe width="1000px" height="600px" src="https://www.youtube.com/embed/mP_Se7N3daA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1000px" height="600px" src="https://www.youtube.com/embed/I-d9ZGgLZuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        <p id="cursor"></p>
     </body>
 </html>

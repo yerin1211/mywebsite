@@ -1,0 +1,8 @@
+.item {
+    background-color: powderblue;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    border: solid black 5px;
+    margin: 50px;
+}
